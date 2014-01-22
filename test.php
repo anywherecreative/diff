@@ -26,12 +26,10 @@
 		<?php
 		}
 		?>
-		<form action="test.php">
-			<textarea name="old" rows="10" cols="30" placeholder="Enter old">
-			</textarea><br />
+		<form action="test.php" method="post">
+			<textarea name="old" rows="10" cols="30" placeholder="Enter Old"></textarea><br />
 			<br />
-			<textarea name="new" rows="10" cols="30" placeholder="Enter old">
-			</textarea>
+			<textarea name="new" rows="10" cols="30" placeholder="Enter New"></textarea>
 			<input type="hidden" name="sent" value="1" />
 			<br />
 			<button type="submit">Check</button>

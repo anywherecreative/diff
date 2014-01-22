@@ -1,3 +1,4 @@
+<?php
 function diff ($old, $new) {
 	$old_array = explode(" ", $old);
 	$new_array = explode(" ", $new);
@@ -36,3 +37,4 @@ function diff ($old, $new) {
 	$outFinal .= "<span class='del'>$outRemoved</span> <span class='add'>$outAdded</span> ";
 	return $outFinal;
 }
+?>

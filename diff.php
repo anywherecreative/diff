@@ -1,27 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
-
-<html>
-<head>
-    <title></title>
-	<style type="text/css">
-		.del {
-			background:#ffcccc;
-			color:#440000;
-		}
-		.add {
-			background:#ccffcc;
-			color:#004400;
-		}
-	</style>
-</head>
-
-<body>
-</body>
-</html>
-<?php
-echo(diff("The quick brown fox jumps over the lazy dog.","The quick brown cat jumps over the lazy dog."));
-function diff ($old, $new)
-{
+function diff ($old, $new) {
 	$old_array = explode(" ", $old);
 	$new_array = explode(" ", $new);
 	$outRemoved = "";
@@ -59,4 +36,3 @@ function diff ($old, $new)
 	$outFinal .= "<span class='del'>$outRemoved</span> <span class='add'>$outAdded</span> ";
 	return $outFinal;
 }
-?>
